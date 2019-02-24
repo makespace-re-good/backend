@@ -1,0 +1,14 @@
+<h3>$!{teamName}团队:</h3>
+<p>
+    恭喜您已经成功入驻演武创客空间。
+</p>
+<ol>
+##    <li><a href="http://59.77.7.34:8080/confirmEnter/$!{teamId}">点此进入确认页面</a></li>
+    <li>登录界面链接为：${urlOfLogin}</a></li>
+
+##    <li>点击页面上的<strong>确认入驻</strong>按钮进行确认</li>
+    <li>您的账号为您的${account}，初始密码为123456</li>
+</ol>
+<div style="margin-left:700px;margin-top:100px">
+    <p>演武创客空间</p>
+</div>

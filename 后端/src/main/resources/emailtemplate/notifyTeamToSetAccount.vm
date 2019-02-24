@@ -1,0 +1,13 @@
+<h3>$!{teamName}团队：</h3>
+<div style="padding-left:2em">
+    <p>您已经办理完入驻的手续。</p>
+    ## TODO:该链接在上线后需要修改
+##    <p><a href="http://59.77.7.34:8080/set-team-account/$!{teamId}">请点击此链接设置您团队的账号密码</a></p>
+    <p><a href="http://127.0.0.1:8080/set-team-account/$!{teamId}">请点击此链接设置您团队的账号密码</a></p>
+    <p>点击首页的<strong>团队登陆</strong>可以登录创客空间对您团队的一些事务进行管理。</p>
+</div>
+<div style="margin-left:700px;margin-top:100px">
+    <p>演武创客空间</p>
+    <p>ps:请尽量避免使用IE浏览器访问</p>
+    <p>$!{date}</p>
+</div>

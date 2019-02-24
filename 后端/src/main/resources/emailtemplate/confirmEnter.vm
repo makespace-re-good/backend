@@ -1,0 +1,13 @@
+##用于团队的入驻再次确认的模板
+
+<html>
+<body>
+<h3>${teamName}团队：</h3>
+<p>恭喜您获得演武创客空间入驻资格</p>
+<p>请通过${confirmUrl} 进行入驻确认</strong></p>
+<div style="margin-left:700px;margin-top:100px">
+    <p>演武创客空间</p>
+    <p>${date}</p>
+</div>
+</body>
+</html>
