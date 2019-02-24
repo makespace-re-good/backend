@@ -6,3 +6,4 @@ target/*
 # idea configuration
 .idea/*
 makerspace.iml
+*.properties
