@@ -31,4 +31,6 @@ public interface FormalMemberRepository extends CrudRepository<FormalMember,Form
     FormalMember findAllByStudentIdAndTeamId(String student_id,int team_id);
 
     FormalMember findFirstByStudentId(String studentid);
+
+
 }

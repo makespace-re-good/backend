@@ -179,4 +179,21 @@ public class FormalTeamController {
         return formalTeamService.changePassword(teamid,oldPassword,newPassword);
     }
 
+    /**
+    * 团队退出
+     *要空出座位号
+    * */
+    @RequestMapping("/deleteTeam")
+    public boolean deleteTeam(Integer team_id){
+
+
+
+        if(formalTeamService.deleteTeam(270,team_id)==true){
+            return formalTeamService.deleteSeat(null,null,team_id);
+        }
+        else
+            return false;
+    }
+
+
 }

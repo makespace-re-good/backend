@@ -1,5 +1,4 @@
-package com.xmu.makerspace.service;
-
+package com.xmu.makerspace.dao;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -9,15 +8,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class FormalTeamServiceTest {
+public class FormalTeamRepositoryTest {
     @Autowired
-    FormalTeamService formalTeamService;
-    @Test
-    public void testSeat()
-    {
-        formalTeamService.chooseSeat("2",1717,1,5);
-    }
+    private FormalTeamRepository formalTeamRepository;
 
     @Test
-    public void testDeleteTeam(){formalTeamService.deleteTeam(123,456);}
+    public void testDeleteTeam() throws Exception{
+       System.out.println(formalTeamRepository.deleteTeam(123,2018092));
+    }
 }

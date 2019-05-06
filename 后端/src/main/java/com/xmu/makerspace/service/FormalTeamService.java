@@ -290,4 +290,27 @@ public class FormalTeamService {
         }
         return false;
     }
+
+    /**
+     * 删除队伍
+     * @param audite_step
+     * @param team_id
+     * @return
+     */
+    public boolean deleteTeam(Integer audite_step,Integer team_id){
+        if(formalTeamRepository.deleteTeam(audite_step,team_id)==1){
+            return true;
+        }
+        else
+            return false;
+    }
+    /**
+     * 删除队伍后删除座位号
+     * */
+    public boolean deleteSeat(String student_id,Integer setTeam_id,Integer studentTeam_id){
+        if(seatRepository.deleteSeat(student_id,setTeam_id,studentTeam_id)==1)
+            return true;
+        else
+            return false;
+    }
 }
